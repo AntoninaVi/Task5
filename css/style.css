@@ -1,0 +1,52 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Sofia Pro";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/SofiaProLight.woff2") format("woff2"), url("/fonts/SofiaProLight.woff") format("woff"), url("/fonts/SofiaProLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Sofia Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/SofiaProExtraLight.woff2") format("woff2"), url("/fonts/SofiaProExtraLight.woff") format("woff"), url("/fonts/SofiaProExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Sofia Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/SofiaProRegular.woff2") format("woff2"), url("/fonts/SofiaProRegular.woff") format("woff"), url("/fonts/SofiaProRegular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/circular-std-6.woff2") format("woff2"), url("/fonts/circular-std-6.woff") format("woff"), url("/fonts/circular-std-medium-500.ttf") format("truetype");
+}
+html {
+  font-family: "Montserrat", "Circular Std", "Sofia Pro", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+}
+
+.wrapper {
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1440px;
+}

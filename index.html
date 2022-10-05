@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task5</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -12,34 +16,78 @@
         <div class="container">
             <header class="header">
                 <nav class="nav">
-                    <div class="logo"><img src="" alt="logotype"></div>
+                    <div class="logo">zainoo</div>
                     <div class="nav__items">
-                        <a href="#" class="nav__item"></a>
-                        <a href="#" class="nav__item"></a>
-                        <a href="#" class="nav__item"></a>
+                        <a href="#" class="nav__item"><img src="img/search.svg" alt="search"></a>
+                        <a href="#" class="nav__item"><img src="img/basket.svg" alt="basket"></a>
+                        <a href="#" class="nav__item"><img src="img/person.svg" alt="person"></a>
                     </div>
                 </nav>
             </header>
 
             <main class="main">
-                <div class="sidebar"></div>
-                <div class="main__page"></div>
+                <div class="sidebar">
+                    <div class="sidebar__items">
+                        <a href="#" class="sidebar__item">Shoes</a>
+                        <a href="#" class="sidebar__item">Bags</a>
+                        <a href="#" class="sidebar__item">Accessories</a>
+                        <a href="#" class="sidebar__item">Support</a>
+                    </div>
+                    <div class="sidebar__extra">
+                        <a href="#" class="sidebar__extra-link">Extra Care</a>
+                        <a href="#" class="sidebar__extra-link">Foot Tech</a>
+                        <a href="#" class="sidebar__extra-link">learn more</a>
+                    </div>
+                    <button class="sidebar__button">Scroll down</button>
+                </div>
+
+                <div class="main__page">
+                    <p class="main__page-description">The best looks; Top Comfort</p>
+                    <h1 class="main__page-title">Comfy Maxer ®</h1>
+                    <p class="main__page-description">Our shoes fuse together an insole that cushions every move, laces
+                        that you’ll never need to tie again, and an odor-fighting copper thread lining.
+                    </p>
+                    <div class="main__page-buttons">
+                        <button class="main__page-button"><img src="img/bag.svg" alt="bag">Add To Cart</button>
+                        <button class="main__page-button"><img src="img/play.svg" alt="play">Watch Intro</button>
+                    </div>
+
+                    <!-- SCRIPT -->
+                    <div class="presenter"></div>
+                    <div class="slide first in-up out-up">
+                        <h2>1</h2>
+                    </div>
+                    <div class="slide in-up out-up">
+                        <h2>2</h2>
+                    </div>
+                    <div class="slide in-up out-left">
+                        <h2>3</h2>
+                    </div>
+                    <div class="slide in-left out-left">
+                        <h2>4</h2>
+                    </div>
+                </div>
+                <!-- SCRIPT -->
+
+                <div class="menu">
+                    <ul class="menu__items">
+                        <li class="menu__item"><a href="#" class="menu__link">fb</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">tw</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">in</a></li>
+                    </ul>
+                    <ul class="menu__items">
+                        <li class="menu__item"><a href="#" class="menu__link">manufacturing</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">packaging</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">team</a></li>
+                    </ul>
+
+                </div>
+
             </main>
-
-            <div class="menu">
-                <ul class="menu__items">
-                    <li class="menu__item"><a href="#" class="menu__link"></a></li>
-                </ul>
-
-                <ul class="social__items">
-                    <li class="social__item"><a href="#" class="social__link"></a></li>
-                </ul>
-            </div>
-
-
 
         </div>
     </div>
 </body>
+<script src="/index.js"></script>
 
 </html>

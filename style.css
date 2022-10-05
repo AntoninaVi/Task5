@@ -1,0 +1,132 @@
+@charset "UTF-8";
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Sofia Pro";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/fonts/SofiaProLight.woff2") format("woff2"), url("/fonts/SofiaProLight.woff") format("woff"), url("/fonts/SofiaProLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Sofia Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/SofiaProExtraLight.woff2") format("woff2"), url("/fonts/SofiaProExtraLight.woff") format("woff"), url("/fonts/SofiaProExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Sofia Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/SofiaProRegular.woff2") format("woff2"), url("/fonts/SofiaProRegular.woff") format("woff"), url("/fonts/SofiaProRegular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/circular-std-6.woff2") format("woff2"), url("/fonts/circular-std-6.woff") format("woff"), url("/fonts/circular-std-medium-500.ttf") format("truetype");
+}
+html {
+  font-family: "Montserrat", "Circular Std", "Sofia Pro", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+}
+
+.wrapper {
+  background-color: #ffffff;
+  padding: 50px 50px;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav__item {
+  margin-left: 25px;
+}
+
+.logo {
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 18px;
+  color: #000000;
+}
+.logo::after {
+  content: "™";
+  font-size: 12px;
+  line-height: 15px;
+  margin: 7px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.sidebar__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 4em;
+  right: -27%;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+.menu__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+.menu__link {
+  margin-right: 32px;
+}

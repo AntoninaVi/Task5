@@ -1,0 +1,156 @@
+$black: #000000;
+$side: #3a3a3a;
+$buttons: #030304;
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+/* Fonts */
+@font-face {
+    font-family: "Sofia Pro";
+    font-style: normal;
+    font-weight: 300;
+    src: url("/fonts/SofiaProLight.woff2") format("woff2"), url("/fonts/SofiaProLight.woff") format("woff"),
+        url("/fonts/SofiaProLight.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Sofia Pro";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/SofiaProExtraLight.woff2") format("woff2"), url("/fonts/SofiaProExtraLight.woff") format("woff"),
+        url("/fonts/SofiaProExtraLight.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Sofia Pro";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/SofiaProRegular.woff2") format("woff2"), url("/fonts/SofiaProRegular.woff") format("woff"),
+        url("/fonts/SofiaProRegular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Circular Std";
+    font-style: normal;
+    font-weight: 500;
+    src: url("/fonts/circular-std-6.woff2") format("woff2"), url("/fonts/circular-std-6.woff") format("woff"),
+        url("/fonts/circular-std-medium-500.ttf") format("truetype");
+}
+html {
+    font-family: "Montserrat", "Circular Std", "Sofia Pro", sans-serif;
+    box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+}
+
+.wrapper {
+    background-color: #ffffff;
+    padding: 50px 50px;
+}
+.container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__items {
+    }
+
+    &__item {
+        margin-left: 25px;
+    }
+}
+.logo {
+    font-family: "Circular Std";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 18px;
+    color: $black;
+    &::after {
+        content: "™";
+        font-size: 12px;
+        line-height: 15px;
+        margin: 7px;
+    }
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+
+    &__page {
+    }
+
+    &__page-description {
+    }
+
+    &__page-title {
+    }
+
+    &__page-buttons {
+    }
+
+    &__page-button {
+    }
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+    }
+
+    &__extra {
+    }
+
+    &__extra-link {
+    }
+
+    &__button {
+    }
+}
+.presenter {
+}
+.slide {
+}
+.first {
+}
+.in-up {
+}
+.out-up {
+}
+.out-left {
+}
+.in-left {
+}
+
+.menu {
+    display: flex;
+    position: relative;
+    top: 4em;
+    right: -27%;
+    transform: rotate(270deg);
+
+    &__items {
+        display: flex;
+        list-style: none;
+    }
+
+    &__link {
+        margin-right: 32px;
+    }
+}
