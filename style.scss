@@ -44,7 +44,7 @@ html {
     box-sizing: border-box;
 }
 body {
-    font-size: 15px;
+    color: $black;
 }
 
 .wrapper {
@@ -85,26 +85,63 @@ body {
 }
 .main {
     display: flex;
-    justify-content: space-between;
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 103px;
+    background-image: url(/img/94.png);
+    background-repeat: no-repeat;
+    background-position: right top;
 
     &__page {
     }
+    &__page-content {
+        width: 518px;
+    }
 
     &__page-description {
+        font-family: "Sofia Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 32px;
+        opacity: 0.4;
     }
 
     &__page-title {
+        font-family: "Sofia Pro";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 62px;
+        line-height: 90px;
+        letter-spacing: -0.02em;
     }
 
     &__page-buttons {
+        margin-top: 49px;
     }
 
     &__page-button {
+        padding: 27px 30px;
+        border: 1px solid #808080;
+        background-color: #ffffff;
+        border-radius: 8px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: $buttons;
+        text-align: center;
+        &-img {
+            margin-right: 12px;
+        }
     }
 }
 .sidebar {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
     &__items {
         display: flex;
@@ -112,15 +149,52 @@ body {
     }
 
     &__item {
+        margin-bottom: 60px;
+        font-family: "Sofia Pro";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 33px;
+        color: $side;
     }
 
     &__extra {
+        display: grid;
+        grid-template-columns: 33% 28%;
+        grid-template-rows: 60%;
     }
 
     &__extra-link {
+        font-family: "Sofia Pro";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 44px;
+        line-height: 100.3%;
+        letter-spacing: -0.01em;
+        color: $black;
+        &:last-of-type {
+            margin-top: 38px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 23px;
+            grid-column: 2;
+            text-align: end;
+        }
+        &:hover {
+            transition: ease-in-out 0.5s;
+            background-color: $black;
+            color: #ffffff;
+        }
     }
 
     &__button {
+        cursor: pointer;
+        text-align: start;
+        margin-top: 122px;
+        background: none;
+        border: none;
+        font-size: 12px;
+        line-height: 19px;
     }
 }
 .presenter {
@@ -141,7 +215,7 @@ body {
 .menu {
     display: flex;
     position: fixed;
-    right: -16.5%;
+    right: -5%;
     top: 50%;
     transform: rotate(270deg);
 
@@ -162,4 +236,32 @@ body {
         color: $black;
         margin-right: 32px;
     }
+}
+
+#pinContainer{
+    overflow-x: auto;
+    height: 200px;
+    width: 500px;
+    margin: 50px auto;
+    scroll-snap-type: y mandatory;
+}
+
+.panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 300px;
+    height: 250px;
+    padding: 20px;
+    font-size: 20px;
+    scroll-snap-align: start;
+    overflow: hidden auto;
+}
+.blue {
+}
+.turqoise {
+}
+.green {
+}
+.bordeaux {
 }
