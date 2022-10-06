@@ -244,32 +244,3 @@ body {
   color: #000000;
   margin-right: 32px;
 }
-
-#pinContainer {
-  overflow-x: auto;
-  height: 200px;
-  width: 500px;
-  margin: 50px auto;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-}
-
-.panel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 300px;
-          flex: 0 0 300px;
-  height: 250px;
-  padding: 20px;
-  font-size: 20px;
-  scroll-snap-align: start;
-  overflow: hidden auto;
-}
