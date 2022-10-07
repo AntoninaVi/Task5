@@ -93,8 +93,6 @@ body {
     background-repeat: no-repeat;
     background-position: right top;
 
-    &__page {
-    }
     &__page-content {
         width: 518px;
     }
@@ -156,12 +154,17 @@ body {
         font-size: 22px;
         line-height: 33px;
         color: $side;
+        &:hover {
+            color: #ecca7b;
+            transition: ease-in-out 0.5s;
+        }
     }
 
     &__extra {
         display: grid;
-        grid-template-columns: 33% 28%;
+        grid-template-columns: 25% 23%;
         grid-template-rows: 60%;
+        column-gap: 6px;
     }
 
     &__extra-link {
@@ -179,6 +182,11 @@ body {
             line-height: 23px;
             grid-column: 2;
             text-align: end;
+            &:hover {
+                background-color: #ffffff;
+                color: #ecca7b;
+                transition: ease-in-out 0.5s;
+            }
         }
         &:hover {
             transition: ease-in-out 0.5s;
@@ -190,7 +198,7 @@ body {
     &__button {
         cursor: pointer;
         text-align: start;
-        margin-top: 122px;
+        margin-top: 120px;
         background: none;
         border: none;
         font-size: 12px;
@@ -198,11 +206,10 @@ body {
     }
 }
 
-
 .menu {
     display: flex;
     position: fixed;
-    right: -5%;
+    right: -5.5vmax;
     top: 50%;
     transform: rotate(270deg);
 
@@ -222,28 +229,33 @@ body {
         line-height: 18px;
         color: $black;
         margin-right: 32px;
+        &:hover {
+            color: #ecca7b;
+            transition: ease-in-out 0.5s;
+        }
     }
 }
 
-.main__page-swiper{
+.main__page-swiper {
     position: absolute;
-    top:30%;
-    right: 15%;
+    top: 26%;
+    right: 13%;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
-    width: 40em;
-    height: 500px;
+    width: 50em;
+    height: 40em;
     z-index: 3;
-
-    #main__page-swiper-item{
-        border-bottom: 1px solid white;
-	padding: 3rem;
-	font-size: 1.4rem;
-	color: rgba(white, .5);
-	text-align: center;
-	scroll-snap-align: start;
-	display: flex;
-	flex-flow: column;
-	justify-content: center;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    #main__page-swiper-item {
+        padding: 1rem;
+        font-size: 1.4rem;
+        color: rgba(white, 0.5);
+        text-align: center;
+        scroll-snap-align: start;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
     }
 }

@@ -1,12 +1,16 @@
-const gra = function(min, max) {
-	return Math.random() * (max - min) + min;
+const gra = function (min, max) {
+  return Math.random() * (max - min) + min;
 };
-const init = function() {
-	let items = document.getElementById("li");
-	for (let i = 0; i < items.length; i++) {
-		items[i].style.minHeight = gra(120, 205) + "vh";
-	}
+const init = function () {
+  let items = document.getElementById("li");
+  for (let i = 0; i < items.length; i++) {
+    items[i].style.minHeight = gra(120, 205) + "vh";
+  }
 
-	// cssScrollSnapPolyfill();
+  // cssScrollSnapPolyfill();
 };
 init();
+
+
+
+
