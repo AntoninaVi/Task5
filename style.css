@@ -244,3 +244,33 @@ body {
   color: #000000;
   margin-right: 32px;
 }
+
+.main__page-swiper {
+  position: absolute;
+  top: 30%;
+  right: 15%;
+  overflow-y: scroll;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  width: 40em;
+  height: 500px;
+  z-index: 3;
+}
+.main__page-swiper #main__page-swiper-item {
+  border-bottom: 1px solid white;
+  padding: 3rem;
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  scroll-snap-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}

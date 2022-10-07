@@ -225,3 +225,25 @@ body {
     }
 }
 
+.main__page-swiper{
+    position: absolute;
+    top:30%;
+    right: 15%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    width: 40em;
+    height: 500px;
+    z-index: 3;
+
+    #main__page-swiper-item{
+        border-bottom: 1px solid white;
+	padding: 3rem;
+	font-size: 1.4rem;
+	color: rgba(white, .5);
+	text-align: center;
+	scroll-snap-align: start;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+    }
+}
