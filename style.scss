@@ -117,9 +117,12 @@ body {
 
     &__page-buttons {
         margin-top: 49px;
+        z-index: 1;
+        position: relative;
     }
 
     &__page-button {
+        cursor: pointer;
         padding: 27px 30px;
         border: 1px solid #808080;
         background-color: #ffffff;
@@ -131,6 +134,7 @@ body {
         line-height: 18px;
         color: $buttons;
         text-align: center;
+        z-index: 1;
         &-img {
             margin-right: 12px;
         }
@@ -238,18 +242,18 @@ body {
 
 .main__page-swiper {
     position: absolute;
-    top: 26%;
+    top: 20em;
     right: 13%;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     width: 50em;
-    height: 40em;
-    z-index: 3;
+    height: 60vh;
+    z-index: 0;
     &::-webkit-scrollbar {
         display: none;
     }
     #main__page-swiper-item {
-        padding: 1rem;
+        padding: 1em;
         font-size: 1.4rem;
         color: rgba(white, 0.5);
         text-align: center;
