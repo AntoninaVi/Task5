@@ -139,6 +139,9 @@ body {
 .main__page-button-img {
   margin-right: 12px;
 }
+.main__page-button:first-of-type {
+  margin-right: 24px;
+}
 
 .sidebar {
   display: -webkit-box;
@@ -270,13 +273,14 @@ body {
 
 .main__page-swiper {
   position: absolute;
-  top: 20em;
-  right: 13%;
+  top: 21em;
+  right: 17%;
   overflow-y: scroll;
+  scroll-behavior: smooth;
   -ms-scroll-snap-type: y proximity;
       scroll-snap-type: y proximity;
-  width: 50em;
-  height: 60vh;
+  width: 39em;
+  height: 31em;
   z-index: 0;
 }
 .main__page-swiper::-webkit-scrollbar {
@@ -284,9 +288,6 @@ body {
 }
 .main__page-swiper #main__page-swiper-item {
   padding: 1em;
-  font-size: 1.4rem;
-  color: rgba(255, 255, 255, 0.5);
-  text-align: center;
   scroll-snap-align: start;
   display: -webkit-box;
   display: -ms-flexbox;
