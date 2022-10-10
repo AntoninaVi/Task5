@@ -66,16 +66,9 @@ body {
 @media screen and (max-width: 990px) {
   .container {
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 @media screen and (max-width: 730px) {
-  .container {
-    width: 90%;
-  }
-}
-@media screen and (max-width: 600px) {
   .container {
     width: 100%;
   }
@@ -257,6 +250,12 @@ body {
         -ms-flex-align: center;
             align-items: center;
     padding: 13px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 990px) and (max-width: 530px) {
+  .main__page-button {
+    padding: 5px;
   }
 }
 .sidebar {
@@ -488,8 +487,19 @@ body {
     position: relative;
     bottom: 5em;
     left: 7rem;
+    margin-top: 15px;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 580px) {
+  .menu {
+    left: 1em;
   }
 }
 .main__page-swiper {
@@ -551,6 +561,14 @@ body {
     position: relative;
     top: -5em;
     height: 18em;
+  }
+}
+@media screen and (max-width: 530px) {
+  .main__page-swiper {
+    position: relative;
+    top: -2em;
+    width: 18em;
+    height: 16em;
   }
 }
 .modal {
