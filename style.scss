@@ -52,6 +52,8 @@ body {
     padding: 50px 50px;
 }
 .container {
+    width: 100%;
+    height: 100%;
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
@@ -121,7 +123,7 @@ body {
             content: "®";
             position: relative;
             bottom: 30px;
-            font-family: 'Sofia Pro';
+            font-family: "Sofia Pro";
             font-style: normal;
             font-weight: 300;
             font-size: 22px;
@@ -222,7 +224,7 @@ body {
 
     &__button {
         text-align: start;
-        margin-top: 120px;
+        margin-top: 90px;
         background: none;
         border: none;
         font-size: 12px;
@@ -233,9 +235,8 @@ body {
 .menu {
     display: flex;
     position: fixed;
-    bottom: 50vmin;
+    top: 50vmin;
     right: -3%;
-
     transform: rotate(270deg);
 
     &__items {
@@ -260,6 +261,27 @@ body {
         }
     }
 }
+@media screen and (max-width: 1750px) {
+    .menu {
+        top: 50vh;
+        right: -7%;
+    }
+}
+@media screen and (max-width: 1650px) {
+    .menu {
+        right: -10vw;
+    }
+}
+@media screen and (max-width: 1550px) {
+    .menu {
+        right: -12rem;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .menu {
+        right: -14rem;
+    }
+}
 
 .main__page-swiper {
     position: absolute;
@@ -280,6 +302,22 @@ body {
         display: flex;
         flex-flow: column;
         justify-content: center;
+    }
+}
+@media screen and (max-width: 1420px) {
+    .main__page-swiper {
+        top: 20em;
+        right: 10%;
+        width: 38em;
+        height: 33em;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .main__page-swiper {
+        top: 25em;
+        right: 10%;
+        width: 35em;
+        height: 27em;
     }
 }
 
