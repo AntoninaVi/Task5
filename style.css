@@ -66,6 +66,18 @@ body {
 @media screen and (max-width: 990px) {
   .container {
     width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 730px) {
+  .container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
   }
 }
 .nav {
@@ -146,6 +158,12 @@ body {
   font-size: 22px;
   line-height: 32px;
 }
+@media screen and (max-width: 1000px) {
+  .main__page-title::after {
+    bottom: 9px;
+    font-size: 13px;
+  }
+}
 .main__page-buttons {
   margin-top: 49px;
   z-index: 1;
@@ -187,10 +205,21 @@ body {
     max-width: 396px;
   }
 }
+@media screen and (max-width: 990px) {
+  .main__page-content {
+    max-width: 250px;
+  }
+}
 @media screen and (max-width: 1200px) {
   .main__page-title {
     font-size: 42px;
     line-height: 60px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .main__page-title {
+    font-size: 25px;
+    line-height: 40px;
   }
 }
 @media screen and (max-width: 1260px) {
@@ -205,8 +234,29 @@ body {
 }
 @media screen and (max-width: 1000px) {
   .main__page-description {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .main__page-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .main__page-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 13px;
   }
 }
 .sidebar {
@@ -429,8 +479,17 @@ body {
 @media screen and (max-width: 990px) {
   .menu {
     position: absolute;
-    top: 50%;
-    right: -3.5em;
+    top: 55%;
+    right: -2em;
+  }
+}
+@media screen and (max-width: 850px) {
+  .menu {
+    position: relative;
+    bottom: 5em;
+    left: 7rem;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 .main__page-swiper {
@@ -490,7 +549,8 @@ body {
 @media screen and (max-width: 990px) {
   .main__page-swiper {
     position: relative;
-    top: 1em;
+    top: -5em;
+    height: 18em;
   }
 }
 .modal {
