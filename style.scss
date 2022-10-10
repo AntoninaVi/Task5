@@ -61,9 +61,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    &__items {
-    }
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
 
     &__item {
         margin-left: 25px;
@@ -78,9 +78,12 @@ body {
     color: $black;
     &::after {
         content: "™";
+        position: relative;
+        bottom: 13px;
         font-size: 12px;
         line-height: 15px;
-        margin: 7px;
+        font-size: 12px;
+        line-height: 15px;
     }
 }
 .main {
@@ -91,7 +94,8 @@ body {
     margin-top: 103px;
     background-image: url(/img/94.png);
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: right 6% top 8%;
+    background-size: 30%;
 
     &__page-content {
         width: 518px;
@@ -113,6 +117,16 @@ body {
         font-size: 62px;
         line-height: 90px;
         letter-spacing: -0.02em;
+        &::after {
+            content: "®";
+            position: relative;
+            bottom: 30px;
+            font-family: 'Sofia Pro';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 32px;
+        }
     }
 
     &__page-buttons {
@@ -133,9 +147,13 @@ body {
         font-size: 15px;
         line-height: 18px;
         color: $buttons;
-        text-align: center;
         z-index: 1;
+        &:hover {
+            background-color: #505054;
+            color: #ffffff;
+        }
         &-img {
+            vertical-align: middle;
             margin-right: 12px;
         }
         &:first-of-type {
@@ -203,7 +221,6 @@ body {
     }
 
     &__button {
-        cursor: pointer;
         text-align: start;
         margin-top: 120px;
         background: none;
@@ -216,8 +233,9 @@ body {
 .menu {
     display: flex;
     position: fixed;
-    right: -5.5vmax;
-    top: 50%;
+    bottom: 50vmin;
+    right: -3%;
+
     transform: rotate(270deg);
 
     &__items {
@@ -245,13 +263,13 @@ body {
 
 .main__page-swiper {
     position: absolute;
-    top: 21em;
-    right: 17%;
+    top: 15em;
+    right: 16%;
     overflow-y: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: y proximity;
-    width: 39em;
-    height: 31em;
+    width: 47em;
+    height: 40em;
     z-index: 0;
     &::-webkit-scrollbar {
         display: none;
@@ -270,25 +288,30 @@ body {
     display: none;
     position: fixed;
     z-index: 1;
-    left: 30%;
-    top: 20%;
+    left: 25%;
+    top: 10%;
     width: 100%;
     height: 100%;
     overflow: auto;
     background-color: transparent;
 }
 .modal-content {
+    width: 60%;
     background-color: transparent;
-    width: 80%;
+}
+iframe {
+    width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .close {
     position: relative;
-    left: 63%;
-    bottom: 6.8em;
+    left: auto;
     font-size: 70px;
     cursor: pointer;
-    &:hover{
+    &:hover {
         color: #ecca7b;
-            transition: ease-in-out 0.5s;
+        transition: ease-in-out 0.5s;
     }
 }
