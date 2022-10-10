@@ -27,11 +27,19 @@ const gra = function (min, max) {
 // document.addEventListener('scroll', onScroll);
 // onScroll();
 
-import * as basicLightbox from 'basiclightbox'
-document.querySelector('button.iframe').onclick = () => {
+let modal = document.getElementById('myModal');
+let btn = document.getElementById('myBtn');
+let span = document.getElementsByClassName("close")[0];
 
-	basicLightbox.create(`
-		<iframe width="560" height="315" src="https://www.youtube.com/watch?v=geFi-ZpN2ZM" frameborder="0" allowfullscreen></iframe>
-	`).show()
+btn.onclick = function(){
+  modal.style.display = "block";
+}
+span.onclick = function(){
+  modal.style.display = "none";
+}
 
+window.onclick = function(event){
+  if (event.target == modal){
+    modal.style.display = "none"
+  }
 }
