@@ -195,7 +195,7 @@ body {
         &:first-of-type {
             margin-right: 24px;
         }
-        @media screen and (max-width: 440px) {
+        @media screen and (max-width: 500px) {
             &:first-of-type {
                 margin-right: 0;
                 margin-bottom: 10px;
@@ -218,7 +218,7 @@ body {
         max-width: 250px;
     }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 460px) {
     .main__page-content {
         max-width: 180px;
     }
@@ -250,6 +250,11 @@ body {
         margin-left: 1em;
     }
 }
+@media screen and (max-width: 300px) {
+    .main__page {
+        margin-left: -15px;
+    }
+}
 
 @media screen and (max-width: 1000px) {
     .main__page-description {
@@ -265,7 +270,7 @@ body {
         margin-top: 10px;
     }
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 500px) {
     .main__page-buttons {
         align-items: flex-start;
         flex-direction: column;
@@ -302,6 +307,31 @@ body {
         font-size: 22px;
         line-height: 33px;
         color: $side;
+        &:nth-of-type(3)::after {
+            content: "New";
+            font-family: "Sofia Pro";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #ffffff;
+            background: #000000;
+            opacity: 0.2;
+            border-radius: 40px;
+            padding: 4px 7px;
+            margin-left: 12px;
+        }
+        @media screen and (max-width: 620px) {
+            &:nth-of-type(3)::after {
+                position: relative;
+                bottom: 20px;
+                right: 20px;
+                font-size: 10px;
+                line-height: 15px;
+                margin-left: 3px;
+                padding: 2px 5px;
+            }
+        }
         &:hover {
             color: #ecca7b;
             transition: ease-in-out 0.5s;
@@ -364,10 +394,10 @@ body {
     }
 }
 @media screen and (max-width: 320px) {
-        .sidebar__item {
-            font-size: 16px;
-            line-height: 15px;
-        }
+    .sidebar__item {
+        font-size: 16px;
+        line-height: 15px;
+    }
 }
 @media screen and (max-width: 1100px) {
     .sidebar__extra {
@@ -556,7 +586,7 @@ body {
         height: 18em;
     }
 }
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 550px) {
     .main__page-swiper {
         position: relative;
         top: -2em;
@@ -564,7 +594,7 @@ body {
         height: 16em;
     }
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 460px) {
     .main__page-swiper {
         right: 25%;
     }
@@ -602,6 +632,12 @@ iframe {
     iframe {
         max-width: 100%;
         height: 74vh;
+    }
+}
+@media screen and (max-width: 600px) {
+    iframe {
+        max-width: 200vh;
+        height: 30vh;
     }
 }
 .close {

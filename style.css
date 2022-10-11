@@ -197,7 +197,7 @@ body {
 .main__page-button:first-of-type {
   margin-right: 24px;
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 500px) {
   .main__page-button:first-of-type {
     margin-right: 0;
     margin-bottom: 10px;
@@ -219,7 +219,7 @@ body {
     max-width: 250px;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 460px) {
   .main__page-content {
     max-width: 180px;
   }
@@ -251,6 +251,11 @@ body {
     margin-left: 1em;
   }
 }
+@media screen and (max-width: 300px) {
+  .main__page {
+    margin-left: -15px;
+  }
+}
 @media screen and (max-width: 1000px) {
   .main__page-description {
     font-size: 16px;
@@ -267,7 +272,7 @@ body {
     margin-top: 10px;
   }
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 500px) {
   .main__page-buttons {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -324,6 +329,31 @@ body {
   font-size: 22px;
   line-height: 33px;
   color: #3a3a3a;
+}
+.sidebar__item:nth-of-type(3)::after {
+  content: "New";
+  font-family: "Sofia Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+  background: #000000;
+  opacity: 0.2;
+  border-radius: 40px;
+  padding: 4px 7px;
+  margin-left: 12px;
+}
+@media screen and (max-width: 620px) {
+  .sidebar__item:nth-of-type(3)::after {
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    font-size: 10px;
+    line-height: 15px;
+    margin-left: 3px;
+    padding: 2px 5px;
+  }
 }
 .sidebar__item:hover {
   color: #ecca7b;
@@ -618,7 +648,7 @@ body {
     height: 18em;
   }
 }
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 550px) {
   .main__page-swiper {
     position: relative;
     top: -2em;
@@ -626,7 +656,7 @@ body {
     height: 16em;
   }
 }
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 460px) {
   .main__page-swiper {
     right: 25%;
   }
@@ -665,6 +695,12 @@ iframe {
   iframe {
     max-width: 100%;
     height: 74vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  iframe {
+    max-width: 200vh;
+    height: 30vh;
   }
 }
 .close {
