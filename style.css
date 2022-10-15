@@ -145,6 +145,13 @@ body {
   background-position: right 6% top 8%;
   background-size: 30%;
 }
+.main::after {
+  content: "";
+  border-right: 2px solid #E9E9E9;
+  height: 100vh;
+  position: relative;
+  left: 43%;
+}
 .main__page-content {
   position: relative;
   width: 518px;
