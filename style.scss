@@ -474,14 +474,7 @@ body {
     top: 50vmin;
     right: -3%;
     transform: rotate(270deg);
-    &::before{
-        content: "";
-        border-left: 2px solid #E9E9E9;
-        height: 100%;
-        position: absolute;
-        right: 5%;
-    }
-
+  
     &__items {
         display: flex;
         list-style: none;

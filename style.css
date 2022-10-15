@@ -524,13 +524,6 @@ body {
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
 }
-.menu::before {
-  content: "";
-  border-left: 2px solid #E9E9E9;
-  height: 100%;
-  position: absolute;
-  right: 5%;
-}
 .menu__items {
   display: -webkit-box;
   display: -ms-flexbox;
