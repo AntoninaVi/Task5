@@ -50,7 +50,6 @@ body {
 .wrapper {
     background-color: #ffffff;
     padding: 50px 50px;
-
 }
 @media screen and (max-width: 1100px) {
     .wrapper {
@@ -70,14 +69,15 @@ body {
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-      &::before {
+    &::before {
         content: "";
         width: 100%;
-        height: 500px;
+        height: 100%;
         background: linear-gradient(90deg, transparent 99.5%, #e9e9e9 50%);
         background-size: 20% 1%;
         background-position: center;
         position: absolute;
+        right: 19%;
         height: 100%;
         z-index: 0;
     }
@@ -184,7 +184,7 @@ body {
         margin-top: 49px;
         z-index: 1;
         position: relative;
-        top:17rem;
+        top: 17rem;
     }
 
     &__page-button {
@@ -309,6 +309,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    &::after{
+        content: "";
+        border-right: 2px solid #E9E9E9;
+        height: 100%;
+        position: absolute;
+        left: 40%;
+    }
 
     &__items {
         display: flex;
@@ -467,6 +474,13 @@ body {
     top: 50vmin;
     right: -3%;
     transform: rotate(270deg);
+    &::before{
+        content: "";
+        border-left: 2px solid #E9E9E9;
+        height: 100%;
+        position: absolute;
+        right: 5%;
+    }
 
     &__items {
         display: flex;
