@@ -132,7 +132,7 @@ body {
   border-right: 1px solid #e9e9e9;
   height: 126%;
   position: absolute;
-  right: 12%;
+  right: 15%;
 }
 .main__page::after {
   content: "";
@@ -167,7 +167,7 @@ body {
   height: 200%;
   position: absolute;
   top: -30em;
-  left: 25%;
+  left: 27%;
   z-index: 0;
 }
 .main__page-content {
@@ -402,7 +402,7 @@ body {
   border-right: 1px solid #e9e9e9;
   height: 126%;
   position: absolute;
-  left: 31.3vw;
+  left: 37%;
 }
 .sidebar__items {
   display: -webkit-box;
@@ -749,11 +749,11 @@ body {
 @media screen and (max-width: 900px) {
   .main__page-swiper {
     top: -2em;
-    height: 23em;
-    width: 30em;
+    height: 22em;
+    width: 28em;
   }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 730px) {
   .main__page-swiper {
     right: 13%;
     height: 17em;
@@ -762,7 +762,7 @@ body {
 }
 @media screen and (max-width: 650px) {
   .main__page-swiper {
-    top: 20%;
+    top: 5%;
     height: 14em;
     width: 22em;
   }
