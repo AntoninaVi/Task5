@@ -350,15 +350,7 @@ body {
 @media screen and (max-width: 440px) {
     .main__page-buttons {
         position: absolute;
-        top: 24%;
-        left: 20%;
-        width: 40%;
-    }
-}
-@media screen and (max-width: 440px) {
-    .main__page-buttons {
-        position: absolute;
-        top: 24%;
+        top: 18%;
         left: 20%;
         width: 40%;
     }
@@ -729,7 +721,7 @@ body {
 @media screen and (max-width: 450px) {
     .main__page-swiper {
         left: -3%;
-        top: 5%;
+        top: -4%;
         width: 15em;
         height: 13em;
     }
