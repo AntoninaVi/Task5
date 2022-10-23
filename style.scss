@@ -207,7 +207,7 @@ body {
 
     &__page-buttons {
         margin-top: 49px;
-        z-index: 3;
+        z-index: 1;
     }
 
     &__page-button {
@@ -640,7 +640,7 @@ body {
         display: flex;
         flex-flow: column;
         justify-content: center;
-        width: 95%;
+        width: 92%;
     }
     @media screen and (max-width: 1000px) {
         #main__page-swiper-item {

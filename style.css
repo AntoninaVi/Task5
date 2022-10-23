@@ -208,7 +208,7 @@ body {
 }
 .main__page-buttons {
   margin-top: 49px;
-  z-index: 3;
+  z-index: 1;
 }
 .main__page-button {
   cursor: pointer;
@@ -690,7 +690,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 95%;
+  width: 92%;
 }
 @media screen and (max-width: 1000px) {
   .main__page-swiper #main__page-swiper-item {
