@@ -677,7 +677,8 @@ body {
   display: none;
 }
 .main__page-swiper #main__page-swiper-item {
-  margin-top: -14em;
+  margin-top: -21em;
+  margin-left: 7em;
   scroll-snap-align: start;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -689,7 +690,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
+  width: 95%;
 }
 @media screen and (max-width: 1000px) {
   .main__page-swiper #main__page-swiper-item {
