@@ -208,9 +208,6 @@ body {
     &__page-buttons {
         margin-top: 49px;
         z-index: 3;
-        position: relative;
-        top: 16rem;
-        right: 5%;
     }
 
     &__page-button {
@@ -631,7 +628,7 @@ body {
     scroll-behavior: smooth;
     scroll-snap-type: y proximity;
     width: 55em;
-    height: 39rem;
+    height: 41rem;
     z-index: 2;
     &::-webkit-scrollbar {
         display: none;
