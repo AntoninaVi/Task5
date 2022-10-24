@@ -4,6 +4,7 @@
 
 
 
+// Modal windows
 let modal = document.getElementById('myModal');
 let btn = document.getElementById('myBtn');
 let span = document.getElementsByClassName("close")[0];
@@ -37,7 +38,6 @@ window.onclick = function (event) {
     modal2.style.display = "none"
   }
 }
-
 
 
 let modal3 = document.getElementById('myModal3');
