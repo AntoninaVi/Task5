@@ -207,6 +207,13 @@ body {
   }
 }
 .main__page-buttons {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   margin-top: 49px;
   z-index: 2;
 }
@@ -222,6 +229,7 @@ body {
   font-size: 15px;
   line-height: 18px;
   color: #030304;
+  z-index: 2;
 }
 .main__page-button:hover {
   background-color: #505054;
@@ -671,7 +679,7 @@ body {
       scroll-snap-type: y proximity;
   width: 55em;
   height: 41rem;
-  z-index: 2;
+  z-index: 3;
 }
 .main__page-swiper::-webkit-scrollbar {
   display: none;

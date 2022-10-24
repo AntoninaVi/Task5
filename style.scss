@@ -206,6 +206,9 @@ body {
     }
 
     &__page-buttons {
+        position: relative;
+        display: flex;
+        justify-content: start;
         margin-top: 49px;
         z-index: 2;
     }
@@ -222,6 +225,7 @@ body {
         font-size: 15px;
         line-height: 18px;
         color: $buttons;
+        z-index: 2;
 
         &:hover {
             background-color: #505054;
@@ -629,7 +633,7 @@ body {
     scroll-snap-type: y proximity;
     width: 55em;
     height: 41rem;
-    z-index: 2;
+    z-index: 3;
     &::-webkit-scrollbar {
         display: none;
     }
@@ -641,6 +645,7 @@ body {
         flex-flow: column;
         justify-content: center;
         width: 92%;
+       
     }
     @media screen and (max-width: 1000px) {
         #main__page-swiper-item {
