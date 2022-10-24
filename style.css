@@ -61,7 +61,7 @@ body {
 }
 .container {
   width: 100%;
-  height: 50%;
+  height: 100%;
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
@@ -127,7 +127,6 @@ body {
   background-repeat: no-repeat;
   background-position: right 6% top 8%;
   background-size: 30%;
-  overflow: hidden;
 }
 .main::after {
   content: "";
@@ -139,7 +138,7 @@ body {
 .main__page::after {
   content: "";
   border-right: 1px solid #e9e9e9;
-  height: 100%;
+  height: 200%;
   position: absolute;
   top: -30em;
   right: 28%;
@@ -148,7 +147,7 @@ body {
 .main__page::after {
   content: "";
   border-left: 1px solid #e9e9e9;
-  height: 100%;
+  height: 200%;
   position: absolute;
   top: -30em;
   left: 45%;
@@ -157,7 +156,7 @@ body {
 .main__page::before {
   content: "";
   border-right: 1px solid #e9e9e9;
-  height: 100%;
+  height: 200%;
   position: absolute;
   top: -30em;
   right: 40%;
@@ -166,7 +165,7 @@ body {
 .main__page::before {
   content: "";
   border-left: 1px solid #e9e9e9;
-  height: 100%;
+  height: 200%;
   position: absolute;
   top: -30em;
   left: 27%;
