@@ -84,7 +84,12 @@ grabCursor: true,
   loop: true,
   
   pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
+    el: ".swiper-pagination",
+    type: "fraction",
+    
   },
 });
+
+
+
+
