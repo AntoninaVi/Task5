@@ -1,6 +1,6 @@
-// const gra = function (min, max) {
-//   return Math.random() * (max - min) + min;
-// };
+// // const gra = function (min, max) {
+// //   return Math.random() * (max - min) + min;
+// // };
 
 
 
@@ -74,3 +74,17 @@ window.onclick = function (event) {
   }
 }
 
+
+var swiper = new Swiper('.swiper-container', {
+  direction: 'vertical',
+  slidesPerView: 1,
+  spaceBetween: 30,
+  mousewheel: true,
+grabCursor: true,
+  loop: true,
+  
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});

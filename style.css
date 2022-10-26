@@ -42,12 +42,12 @@ html {
 
 body {
   color: #000000;
+  overflow: hidden;
 }
 
 .wrapper {
   background-color: #ffffff;
   padding: 50px 50px;
-  overflow: hidden;
 }
 
 @media screen and (max-width: 1100px) {
@@ -231,7 +231,7 @@ body {
   font-size: 15px;
   line-height: 18px;
   color: #030304;
-  z-index: 3;
+  z-index: 1;
 }
 .main__page-button:hover {
   background-color: #505054;
@@ -623,28 +623,37 @@ body {
   }
 }
 .swiper-container {
-  position: absolute;
-  top: 14em;
-  right: 22%;
-  width: 57em;
-  height: 41rem;
+  position: relative;
+  right: 10%;
+  width: 47rem;
+  height: 48rem;
   z-index: 3;
-  overflow-x: hidden;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: start;
 }
 
 @media screen and (max-width: 1680px) {
-  .main__page-swiper {
+  .swiper-container {
     right: 15%;
   }
 }
 @media screen and (max-width: 1350px) {
-  .main__page-swiper {
-    right: 8%;
+  .swiper-container {
     width: 70%;
   }
 }
 @media screen and (max-width: 1250px) {
-  .main__page-swiper {
+  .swiper-container {
     top: 23%;
     right: 10%;
     height: 39rem;
@@ -701,8 +710,6 @@ body {
   }
 }
 #main__page-swiper-item {
-  margin-top: -21.5em;
-  margin-left: 10.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -710,10 +717,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 88%;
+  width: 100%;
+  margin-top: 10%;
+  margin-left: -48%;
 }
 
 @media screen and (max-width: 1250px) {
