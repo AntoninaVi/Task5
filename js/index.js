@@ -1,7 +1,6 @@
-// // const gra = function (min, max) {
-// //   return Math.random() * (max - min) + min;
-// // };
-
+// const gra = function (min, max) {
+//   return Math.random() * (max - min) + min;
+// };
 
 
 // Modal windows
@@ -83,11 +82,11 @@ var swiper = new Swiper('.swiper-container', {
 grabCursor: true,
   loop: true,
   
-  pagination: {
-    el: ".swiper-pagination",
-    type: "fraction",
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   type: "fraction",
     
-  },
+  // },
 });
 
 
