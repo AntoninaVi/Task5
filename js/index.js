@@ -82,11 +82,11 @@ var swiper = new Swiper('.swiper-container', {
 grabCursor: true,
   loop: true,
   
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //   type: "fraction",
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
     
-  // },
+  },
 });
 
 

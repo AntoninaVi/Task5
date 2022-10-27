@@ -770,6 +770,35 @@ body {
     right: 9em;
   }
 }
+.swiper-pagination {
+  position: fixed;
+  top: 70vmin;
+}
+
+@media screen and (max-width: 1600px) {
+  .swiper-pagination {
+    position: fixed;
+    top: 60vmin;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .swiper-pagination {
+    position: fixed;
+    top: 50vmin;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .swiper-pagination {
+    position: fixed;
+    top: 80vh;
+  }
+}
+@media screen and (max-width: 850px) {
+  .swiper-pagination {
+    position: fixed;
+    top: 69vh;
+  }
+}
 .modal {
   display: none;
   position: fixed;
