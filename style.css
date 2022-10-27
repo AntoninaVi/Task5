@@ -777,19 +777,16 @@ body {
 
 @media screen and (max-width: 1600px) {
   .swiper-pagination {
-    position: fixed;
     top: 60vmin;
   }
 }
 @media screen and (max-width: 1400px) {
   .swiper-pagination {
-    position: fixed;
     top: 50vmin;
   }
 }
 @media screen and (max-width: 1050px) {
   .swiper-pagination {
-    position: fixed;
     top: 80vh;
   }
 }
