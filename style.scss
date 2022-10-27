@@ -714,7 +714,7 @@ body {
 
 @media screen and (max-width: 590px) {
     #main__page-swiper-item img {
-        margin-top: 20%;
+        margin-top: 30%;
         margin-left: 2.5em;
         width: 60%;
     }
@@ -722,13 +722,14 @@ body {
 @media screen and (max-width: 450px) {
     #main__page-swiper-item img {
         position: relative;
-        top: 5.5em;
+        top: 2.5em;
         right: 4.5em;
     }
 }
 @media screen and (max-width: 390px) {
     #main__page-swiper-item img {
-        top: 6em;
+
+        top: 4.5em;
         right: 6em;
         width: 55%;
     }
@@ -760,10 +761,16 @@ body {
 }
 @media screen and (max-width: 850px) {
     .swiper-pagination {
-        position: fixed;
-        top: 69vh;
+        position: relative;
+        top: 19em;
+        right: 20em;
     }
 }
+// @media screen and (max-width: 500px) {
+//     .swiper-pagination {
+      
+//     }
+// }
 // Modal
 .modal {
     display: none;
